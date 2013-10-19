@@ -1,0 +1,35 @@
+- slideCount = 14
+
+#myCarousel.carousel.slide
+  .carousel-inner
+    include 1
+    include 2
+    include 3
+    include 4
+    include 5
+    include 6
+    include 7
+    include 8
+    include 9
+    include 10
+    include 11
+    include 12
+    include 13
+    include 14
+
+  //- dot as the bottom
+  ol.carousel-indicators
+    - for(var i = 0; i < slideCount; i++) {
+      - if (i===0) {
+        li.active('data-target'='#myCarousel', 'data-slide-to'='0')
+      - } else {
+        li('data-target'='#myCarousel', 'data-slide-to'=i)
+      - }
+    - }
+
+  //- left and right arrows
+  a.left.carousel-control(href="#myCarousel", 'data-slide'="prev")
+    span.glyphicon.glyphicon-chevron-left
+  a.right.carousel-control(href="#myCarousel", 'data-slide'="next")
+    span.glyphicon.glyphicon-chevron-right
+

@@ -1,0 +1,67 @@
+!!! 5
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title= title
+
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/carousel.css')
+    script(src='//code.jquery.com/jquery-1.9.1.js')
+
+    style
+      body, a, .navbar-brand {
+        font-size: 175% !important
+      }
+      .navbar {
+        margin-bottom: 0px !important;
+      }
+      pre {
+        font-size: 175% !important;
+        text-align: left;
+        padding-left: 50px;
+      }
+      div.item > div.container {
+        padding: 40px 70px;
+      }
+      .twitter {
+        color: white !important;
+        line-height: 110% !important;
+      }
+      img.maxcdn {
+        margin-top: 5px !important;
+      }
+      li.yp-eng {
+        margin: 0px -5px -5px -5px !important;
+      }
+      li.yp-eng > a > span {
+        padding: 5px !important;
+        background-color: white !important;
+      }
+      li.yp-eng > a > span > span {
+        color: black !important;
+        font-size: 16pt !important;
+      }
+      table.slide {
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        font-size: 150%;
+        color: white;
+      }
+
+
+    // if lt IE 9
+      script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.min.js')
+      script(src='//cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js')
+
+  body
+    include header
+
+    block content
+
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', async=true)
+
