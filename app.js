@@ -20,12 +20,7 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-
-// development only
-if ('development' == app.get('env')) {
-    app.use(express.errorHandler());
-    app.locals.pretty = true;
-}
+app.use(express.errorHandler());
 
 app.get('/', routes.index);
 
