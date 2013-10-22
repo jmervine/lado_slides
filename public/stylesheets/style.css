@@ -1,11 +1,13 @@
-body, a, .navbar-brand {
-  font-size: 175% !important
+body {
+  background-color: black !important;
+}
+body, a, .navbar-brand, pre {
+  font-size: 175% !important;
 }
 .navbar {
   margin-bottom: 0px !important;
 }
 pre {
-  font-size: 175% !important;
   text-align: left;
   padding-left: 50px;
 }
@@ -39,4 +41,3 @@ table.slide {
   font-size: 150%;
   color: white;
 }
-
